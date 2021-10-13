@@ -17,6 +17,16 @@ public class Cachorro extends Animal{
 		System.out.println("\nNome: " + getNome() + "\nIdade: " 
 	+ getIdade()+" anos \nRaça: "+ raca + "\nDono: " + dono);
 	}
+	
+	@Override
+	public void som(String som) {
+		System.out.print("\nO cachorro começou a latir!!\n "+som);
+	}
+	
+	@Override
+	public void correr() {
+		System.out.print("\nO cachorro começou a correr!!");
+	}
 
 	public String getRaca() {
 		return raca;

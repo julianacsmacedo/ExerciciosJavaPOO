@@ -16,6 +16,16 @@ public class Cavalo extends Animal {
 	{
 		System.out.println("\nNome: " + getNome() + "\nIdade: " + getIdade()+" anos \nRaça: "+ raca + "\nPeso: " + peso + " kg");
 	}
+	
+	@Override
+	public void som(String som) {
+		System.out.print("\nO cavalo começou a relinchar!!\n "+som);
+	}
+	
+	@Override
+	public void correr() {
+		System.out.print("\nO cavalo começou a correr!!");
+	}
 
 	public String getRaca() {
 		return raca;

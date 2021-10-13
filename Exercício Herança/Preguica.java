@@ -19,6 +19,21 @@ public class Preguica extends Animal{
 		System.out.println("\nNome: " + getNome() + "\nIdade: " + getIdade()+" anos \nOrigem: "+ origem + "\nPeso: " + peso 
 				+ " kg \nTempo de sono: " + horaSono);
 	}
+	
+	@Override
+	public void som(String som) {
+		System.out.print("\n A preguiça começou a emitir um barulho!!\n "+som);
+	}
+	
+	@Override
+	public void correr() {
+		System.out.print("\nA preguiça não consegue correr!!");
+	}
+	
+	public void subirEmArvores()
+	{
+		System.out.println("\nA preguiça subiiu em uma árvore!!");
+	}
 
 	public float getPeso() {
 		return peso;

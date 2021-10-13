@@ -1,10 +1,15 @@
 package POO;
 
-public class Animal {
+public abstract class Animal {
 	
 	private String nome;
 	private int idade;
 	
+	//Poliformismo
+	abstract public void som(String som);
+	abstract public void correr();
+	
+	//Construtor
 	public Animal(String nome, int idade)
 	{
 		this.nome = nome;
@@ -13,7 +18,7 @@ public class Animal {
 	
 	public void imprimir()
 	{
-		System.out.println("\t--FICHA ANIMAIS--");
+		System.out.println("\t--REGISTRO ANIMAL--");
 	}
 
 	public String getNome() {
